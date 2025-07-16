@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cointainer {
+            width: 80vw;
+            height: 30vh;
+            border: 3px solid black;
+        }
+        .box{
+            border: 3px solid black;
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            animation: prj 2s;
+            animation-iteration-count: 3; 
+        }
+        @keyframes prj{
+            from {
+             
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation count</title>
+</head>
+<body>
+    <div class="cointainer">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
