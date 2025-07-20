@@ -2,34 +2,31 @@
 <html lang="en">
 <head>
     <style>
-        *{
-            margin: 0;
-            margin-bottom: 5px;
-            padding: 0;
-            padding: 15px 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            color: #333;
+        .container {
+            /* display: flex;
+            flex-wrap: wrap; */
+            gap: 10px;
         }
-        body{
-            background-color: rgb(233, 233, 206);
-        }
-        div{
-            background-color: red;
-            border: 2px solid black;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 20px;
-            color: whitesmoke;
+        .box{
+            width: 50px;
+            height: 50px;
+            padding: 30px;
+            margin: 10px;
+            border: 3px solid black;
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEMO_CODE</title>
+    <title>DOM</title>
 </head>
 <body>
-    <div>this is a demo code for testing purposes</div>
-    <div>this is another div for tesing.</div>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+    <script src="i7.js"></script>
 </body>
 </html>
