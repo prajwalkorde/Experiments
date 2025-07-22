@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" data-createdby="prj">Hey there this is a box.</div>
+    </div>
+    <script>
+        let con = document.querySelector('.container');
+        let box = document.querySelector('.box');
+        con.insertAdjacentHTML('beforeend', '<b> i am a student. </b>')
+    </script>
+</body>
+</html>
