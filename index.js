@@ -1,26 +1,11 @@
-function Greet(name) {
-   console.log("hello " + name + " how are you doing today?");
-}
-Greet("John");
-Greet("Jane");
+const express = require('express')
+const app = express()
+const port = 3000
 
-function sum(a,b=5) {
-   return a + b;
-}
-result = sum(5,10);
-result = sum(5);
+app.get('/', (req, res) => {
+  res.send('Hello World!!')
+})
 
-console.log("The sum is: " + result);
-
-const func1 = (x) => {
-    console.log("i am an arrow function " + x);
-}
-func1("test");
-func1("another test");
-
-const func2 = (x,y) => {
-    return x + y;
-}
-
-r=func2(10,20);
-console.log("The result of func2 is: " + r);
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
