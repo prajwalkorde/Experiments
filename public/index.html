@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: aqua;
+            color: brown;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express</title>
+</head>
+<body>
+    <h2>Hello this is a test page</h2>
+    <h2>Hello this is a test H2tag</h2>
+    <script>
+        async function testPost() {
+            let a = await fetch("/home", {method: "POST"})
+            let b = await a.text()
+            console.log(b)
+        }
+        testPost()
+    </script>
+</body>
+</html>
