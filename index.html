@@ -1,21 +1,33 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Bootstrap demo</title>
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <div class="cont text-2xl bg-amber-200 text-amber-950" >
-    <ul fle class="flex space-x-5">
-        <li>home</li>
-        <li>about</li>
-        <li>contact us</li>
-        <li>blog</li>
+  <nav class="flex bg-amber-900 text-white py-4">
+    <ul class="flex gap-4">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
     </ul>
-  </div>
+  </nav>
+
+  <main>
+    <div class="container mx-auto">
+      <div class="card flex">
+        <div class="img"><img src="layout.png" alt="error"></div>
+        <div class="text flex flex-col">
+          <h1 class="font-bold text-2xl mx-4">Installing VS Code & how website work | HelloWorld Course</h1>
+          <div class="text-lg my-4 mx-4 text-gray-700"> CodeWithHarry * 257k views * 3 months ago</div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
