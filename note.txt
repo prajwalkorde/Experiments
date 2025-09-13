@@ -1,0 +1,12 @@
+fcntl.h --> have function for file control operation.
+eg. managing file descriptors
+setting file permissions 
+locking files, controlling file i/o
+**************************************************
+unistd.h --> provides access to the operating systems API for unix-like systems.
+eg. declaration for various system calls,
+functions that allow interation with the opreting systems like file operation process control etc.
+*************************************************
+sys/ioctl.h --> provides the interface for the IOCtl system call
+eg. which is used to perform device-specific input/output operations on file descriptors.
+*************************************************
